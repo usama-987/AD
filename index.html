@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Authentic Detective</title>
+    <style>
+      * { box-sizing: border-box; }
+      html { zoom: 1; }
+    </style>
+    <script>
+      (function () {
+        var DESIGN_WIDTH = 1440;
+        var MOBILE_BREAK = 768;
+
+        function applyZoom() {
+          var vw = window.innerWidth;
+          if (vw >= MOBILE_BREAK) {
+            var zoom = Math.min(1, vw / DESIGN_WIDTH);
+            document.documentElement.style.zoom = zoom;
+            /* Firefox fallback */
+            document.documentElement.style.transform = 'none';
+          } else {
+            document.documentElement.style.zoom = 1;
+            document.documentElement.style.transform = 'none';
+          }
+        }
+
+        applyZoom();
+        window.addEventListener('resize', applyZoom);
+      })();
+    </script>
+  </head>
+  <body class="overflow-x-hidden m-0 p-0">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
