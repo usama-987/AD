@@ -2,13 +2,10 @@ import { useState, useEffect } from 'react'
 import Logo from '../assets/Logo.svg'
 
 const navItems = [
-  { label: 'Home' },
-  { label: 'Authentication' },
-  { label: 'Services',  children: ['Verify Certificate', 'Authenticity Card', 'Subscription'] },
-  { label: 'Network',   children: ['Sellers Collective'] },
-  { label: 'Explore',   children: ['Our Brand', 'Our App', 'Blog'] },
-  { label: 'Support',   children: ['Contact Us'] },
-  { label: 'Pricing',   children: ['Prices'] },
+  { label: 'HOW IT WORKS' },
+  { label: 'FEATURES' },
+  { label: 'ABOUT US'},
+  { label: 'FAQ'},
 ]
 
 
@@ -28,27 +25,6 @@ const DesktopItem = ({ item }) => {
       <div className="text-sm font-bold tracking-widest uppercase cursor-pointer group-hover:text-[#b47500] transition-colors whitespace-nowrap select-none">
         {item.label}
       </div>
-
-      {/* dropdown panel — hidden until group hover */}
-      <ul className="
-        absolute top-full left-1/2 -translate-x-1/2 mt-3 z-50
-        bg-white border border-gray-200 rounded-lg shadow-lg
-        py-1.5 min-w-[170px]
-        opacity-0 invisible translate-y-1
-        group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
-        transition-all duration-200
-      ">
-        {/* triangle pointer */}
-        <span className="absolute -top-[6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-gray-200 rotate-45 pointer-events-none" />
-        {item.children.map(child => (
-          <li
-            key={child}
-            className="px-4 py-2 text-[11px] font-semibold tracking-wider uppercase text-[#1a1a1a] hover:bg-[#f5f0eb] hover:text-[#b47500] cursor-pointer transition-colors whitespace-nowrap"
-          >
-            {child}
-          </li>
-        ))}
-      </ul>
     </li>
   )
 }
@@ -104,7 +80,7 @@ const Navbar = () => {
     <nav className="bg-[#f5f0eb] px-4 py-4 relative z-40">
 
       {/* ── Top bar ── */}
-      <div className="flex items-center justify-between md:justify-center gap-6 md:gap-10">
+      <div className="flex items-center justify-between md:justify-center gap-6 md:gap-35">
         <img src={Logo} alt="Authentic Detective Logo" className="h-8 md:h-10 w-auto shrink-0" />
 
         {/* Desktop links */}

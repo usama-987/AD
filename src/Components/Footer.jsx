@@ -48,13 +48,10 @@ const Footer = () => (
         <img src={Logo} alt="Logo" className="h-8 w-auto brightness-0 invert" />
       </div>
       <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white uppercase tracking-widest font-semibold">
-        <li className="cursor-pointer hover:text-gray-300">Home</li>
-        <li className="cursor-pointer hover:text-gray-300">Authentication</li>
-        <li className="cursor-pointer hover:text-gray-300">Services</li>
-        <li className="cursor-pointer hover:text-gray-300">Network</li>
-        <li className="cursor-pointer hover:text-gray-300">Explore</li>
-        <li className="cursor-pointer hover:text-gray-300">Support</li>
-        <li className="cursor-pointer hover:text-gray-300">Pricing</li>
+        <li className="cursor-pointer hover:text-gray-300">HOW IT WORKS</li>
+        <li className="cursor-pointer hover:text-gray-300">FEATURES</li>
+        <li className="cursor-pointer hover:text-gray-300">ABOUT US</li>
+        <li className="cursor-pointer hover:text-gray-300">FAQ</li>
       </ul>
       <div className="flex items-center gap-2">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="1.5">
