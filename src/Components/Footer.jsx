@@ -5,59 +5,12 @@ const Footer = () => (
     {/* Upper footer */}
     <div className="bg-[#f5f0eb] px-8 md:px-16 py-6 flex flex-col md:flex-row gap-6 items-center justify-between border-2 border-gray-300 mx-4 md:mx-10 my-6 rounded-xl">
 
-      {/* Left: QR + app links */}
+      {/* Left: app links */}
       <div className="flex items-center gap-5">
-        {/* Proper QR code SVG */}
-        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="90" height="90" fill="white" rx="4"/>
-          {/* Top-left finder */}
-          <rect x="6" y="6" width="26" height="26" fill="#1a1a1a"/>
-          <rect x="10" y="10" width="18" height="18" fill="white"/>
-          <rect x="14" y="14" width="10" height="10" fill="#1a1a1a"/>
-          {/* Top-right finder */}
-          <rect x="58" y="6" width="26" height="26" fill="#1a1a1a"/>
-          <rect x="62" y="10" width="18" height="18" fill="white"/>
-          <rect x="66" y="14" width="10" height="10" fill="#1a1a1a"/>
-          {/* Bottom-left finder */}
-          <rect x="6" y="58" width="26" height="26" fill="#1a1a1a"/>
-          <rect x="10" y="62" width="18" height="18" fill="white"/>
-          <rect x="14" y="66" width="10" height="10" fill="#1a1a1a"/>
-          {/* Data modules */}
-          <rect x="38" y="6" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="46" y="6" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="14" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="46" y="22" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="6" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="14" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="22" y="46" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="46" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="54" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="62" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="78" y="38" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="46" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="54" y="46" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="70" y="46" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="54" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="46" y="54" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="62" y="54" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="78" y="54" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="62" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="54" y="62" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="70" y="62" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="46" y="70" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="62" y="70" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="38" y="78" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="54" y="78" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="70" y="78" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="78" y="70" width="6" height="6" fill="#1a1a1a"/>
-          <rect x="78" y="78" width="6" height="6" fill="#1a1a1a"/>
-        </svg>
-
         <div className="flex flex-col gap-1.5">
-          <p className="text-[11px] uppercase tracking-widest font-bold">Visit Our Website</p>
-          <p className="text-[11px] text-gray-700 font-medium">authenticdetective.com</p>
-          <p className="text-[11px] uppercase tracking-widest font-bold mt-2">Download Our App</p>
+          <p className="text-[12px] uppercase tracking-widest font-bold">Visit Our Website</p>
+          <p className="text-[12px] text-gray-700 font-medium">authenticdetective.com</p>
+          <p className="text-[12px] uppercase tracking-widest font-bold mt-2">Download Our App</p>
           <div className="flex gap-2 mt-1">
             {/* App Store */}
             <div className="bg-[#1a1a1a] text-white rounded px-2 py-1.5 flex items-center gap-2">
@@ -95,10 +48,13 @@ const Footer = () => (
         <img src={Logo} alt="Logo" className="h-8 w-auto brightness-0 invert" />
       </div>
       <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-white uppercase tracking-widest font-semibold">
-        <li className="cursor-pointer hover:text-gray-300">How It Works</li>
-        <li className="cursor-pointer hover:text-gray-300">Features</li>
-        <li className="cursor-pointer hover:text-gray-300">About Us</li>
-        <li className="cursor-pointer hover:text-gray-300">FAQ</li>
+        <li className="cursor-pointer hover:text-gray-300">Home</li>
+        <li className="cursor-pointer hover:text-gray-300">Authentication</li>
+        <li className="cursor-pointer hover:text-gray-300">Services</li>
+        <li className="cursor-pointer hover:text-gray-300">Network</li>
+        <li className="cursor-pointer hover:text-gray-300">Explore</li>
+        <li className="cursor-pointer hover:text-gray-300">Support</li>
+        <li className="cursor-pointer hover:text-gray-300">Pricing</li>
       </ul>
       <div className="flex items-center gap-2">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="1.5">
